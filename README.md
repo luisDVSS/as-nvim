@@ -9,18 +9,20 @@ Dos colorschemes para Neovim con el mismo motor y paletas independientes:
 
 Sin transparencia: ambos temas pintan siempre su propio fondo.
 
+Repositorio: <https://github.com/luisDVSS/as-nvim>
+
 - Requisitos: **Neovim ≥ 0.10** (grupos `@` de Treesitter, `nvim_set_hl`).
 - Sin dependencias de plugins: las integraciones solo definen grupos de resaltado.
 - Compatible con terminales sin truecolor (cada color se aproxima a la paleta ANSI 0-15).
 
 ## Instalación
 
-Con `lazy.nvim` usando el directorio local:
+Con `lazy.nvim`:
 
 ```lua
 {
-  dir = "~/proyectos/pruebas/tema_dvss",
-  name = "as",
+  "luisDVSS/as-nvim",
+  lazy = false,
   priority = 1000,
   config = function()
     require("as").setup({})
@@ -29,10 +31,23 @@ Con `lazy.nvim` usando el directorio local:
 }
 ```
 
-Instalación manual:
+> `lazy = false` es importante: el plugin debe estar en el `runtimepath` desde
+> el arranque para que `:colorscheme as-him` encuentre `colors/as-him.lua`.
+
+Si usas **LazyVim**:
+
+```lua
+return {
+  { "luisDVSS/as-nvim", lazy = false, priority = 1000 },
+  { "LazyVim/LazyVim", opts = { colorscheme = "as-him" } },
+}
+```
+
+Instalación manual (pack nativo de Neovim):
 
 ```sh
-cp -r tema_dvss ~/.local/share/nvim/site/pack/themes/start/as-nvim
+git clone https://github.com/luisDVSS/as-nvim \
+  ~/.local/share/nvim/site/pack/themes/start/as-nvim
 ```
 
 ## Uso
@@ -156,7 +171,7 @@ activo.
 ## Estructura
 
 ```
-tema_dvss/
+as-nvim/
 ├── colors/
 │   ├── as-him.lua
 │   └── as-her.lua
