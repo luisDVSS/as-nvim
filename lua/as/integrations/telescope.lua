@@ -71,6 +71,17 @@ function M.setup(b)
 
   hl("TelescopeResultsOp", { fg = p.fg_muted })
   hl("TelescopeResultsID", { fg = p.cyan })
+
+  -- ── Permisos del preview y contador del picker ───────────────────────
+  hl("TelescopePromptCounter", { fg = p.fg_muted })
+  hl("TelescopePreviewRead", { fg = p.green })
+  hl("TelescopePreviewWrite", { fg = p.orange })
+  hl("TelescopePreviewExecute", { fg = p.red })
+  hl("TelescopePreviewLink", { fg = p.cyan })
+  hl("TelescopePreviewSocket", { fg = p.purple })
+  hl("TelescopePreviewBlock", { fg = p.yellow })
+  hl("TelescopePreviewCharDev", { fg = p.yellow })
+  hl("TelescopePreviewSticky", { fg = p.red, bold = true })
 end
 
 return M

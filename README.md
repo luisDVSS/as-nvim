@@ -105,14 +105,14 @@ activo.
 |---|---|
 | Treesitter | `@comment`, `@keyword`, `@function`, `@type`, `@markup.*`, … |
 | LSP | `Diagnostic*`, `LspReference*`, `LspInlayHint`, `@lsp.type.*` |
-| telescope.nvim | picker, preview, resultados y diffs |
-| gitsigns.nvim | signos, líneas y blame |
-| nvim-cmp / blink.cmp | menú, tipos y documentación |
+| telescope.nvim | picker, preview, permisos, contador y diffs |
+| gitsigns.nvim | signos, staged, word-diff, líneas virtuales y blame |
+| nvim-cmp / blink.cmp | menú, tipos, iconos de tipo y documentación |
 | bufferline.nvim | buffers, separadores e indicadores |
 | which-key.nvim | ventana, grupos y descripciones |
 | snacks.nvim | picker, notifier, dashboard, indent y explorer |
 | oil.nvim | directorios, enlaces y operaciones |
-| neo-tree.nvim | árbol, iconos y estado git |
+| neo-tree.nvim | árbol, iconos, estado git, selección, pestañas y flotantes |
 | nvim-tree.lua | árbol, iconos y estado git |
 | mini.nvim | statusline, tabline, icons, files, pick, diff, indentscope, hipatterns |
 | trouble.nvim | listas de diagnósticos |
@@ -121,6 +121,8 @@ activo.
 | mason.nvim | UI de instalación de servidores |
 | nvim-dap / dap-ui | breakpoints y paneles |
 | nvim-notify / fidget.nvim | notificaciones y progreso LSP |
+| noice.nvim | cmdline, popups, mensajes, progreso LSP y completado |
+| render-markdown.nvim | encabezados, código, citas, listas, tablas y callouts |
 | alpha-nvim | dashboard |
 | flash.nvim, treesitter-context, navic, illuminate, rainbow-delimiters, todo-comments | grupos auxiliares |
 

@@ -49,6 +49,9 @@ function M.setup(b)
   hl("BufferLinePickVisible", { fg = p.red, bold = true })
   hl("BufferLinePickSelected", { fg = p.red, bold = true })
 
+  hl("BufferLineGroupLabel", { fg = p.bg, bg = p.purple, bold = true })
+  hl("BufferLineGroupSeparator", { fg = p.border, bg = p.bg_alt })
+
   local diagnostics = {
     Error = p.red,
     Warning = p.orange,

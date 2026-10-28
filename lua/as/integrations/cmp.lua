@@ -43,7 +43,10 @@ function M.setup(b)
   -- ── nvim-cmp ──────────────────────────────────────────────────────────
   for kind, color in pairs(kind_colors) do
     hl("CmpItemKind" .. kind, { fg = color })
+    hl("CmpItemKind" .. kind .. "Icon", { fg = color })
   end
+
+  hl("CmpItemKindIcon", { fg = p.pink })
 
   hl("CmpItemAbbr", { fg = p.fg })
   hl("CmpItemAbbrDeprecated", { fg = p.fg_muted, strikethrough = true })

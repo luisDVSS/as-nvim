@@ -80,6 +80,7 @@ function M.setup(b)
   hl("@keyword", keyword)
   for _, sub in ipairs({
     "conditional",
+    "conditional.ternary",
     "repeat",
     "import",
     "export",
@@ -87,10 +88,13 @@ function M.setup(b)
     "return",
     "debug",
     "directive",
+    "directive.define",
     "function",
     "operator",
     "storage",
     "type",
+    "coroutine",
+    "modifier",
   }) do
     hl("@keyword." .. sub, keyword)
   end

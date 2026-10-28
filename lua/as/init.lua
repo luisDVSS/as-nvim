@@ -24,6 +24,8 @@ M.integrations = {
   "mason",
   "dap",
   "notify",
+  "noice",
+  "render-markdown",
   "alpha",
   "misc",
 }
